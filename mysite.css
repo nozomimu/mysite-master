@@ -6,6 +6,7 @@
 a {
 	text-decoration: none;
 }
+
 .clearfix::after{
 	content: "";
 	display: block;
@@ -47,8 +48,9 @@ header{
 .main-visual{
 	width: 100%;
 	height: 650px;
-	background-image: url(img/mv.png);
 	background-size: cover;
+	background-image: url(img/mv.png);
+	background-position: center;
 }
 .main-visual-text1{
 	color: #FAFAFA;
@@ -62,25 +64,146 @@ header{
 	text-align: center;
 	padding-top: 10px;
 }
-.portfolio{
+.main{
 	width: 100%;
-	height: 400px;
+}
+.grey{
+	width: 100%;
+	height: auto;
 	background-color: #ECEFF1;
 }
-.portfolio-headline{
-	padding-top: 90px;
-	width: 70px;
+.portfolio{
+	overflow: hidden;
+	padding: 90px 0;
+	width: 940px;
+	text-align: center;
 	margin: 0 auto;
-	padding-bottom: 3px;
+}
+.midashi{
+	color: 000000;
+	size: 32px;
+	margin: 0 auto;
+}
+.border{
+	width: 70px;
+	text-align: center;
+	margin: 0 auto;
 	border-bottom: 3px solid #EC715F;
-	font-size: 32px;
+	padding-bottom: 8px;
 }
 .portfolio-text{
-	padding: 30px 0 0 30px;
-	color: #000000;
-	font-size: 18px;
+	width: 90%;
+	padding: 60px 0;
+	size: 16px;
+}
+.photo-box{
+	float: left;
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	margin: 0 10px 10px 0;
+}
+.photo-box:nth-child(4){
+	background-image: url(img/sketch.jpg);
+}
+.photo-box:nth-child(5){
+	background-image: url(img/websuku.png);
+}
+.photo-box:nth-child(6){
+	background-image: url(img/write.jpg);
+}
+.photo-box:nth-child(7){
+	background-image: url(img/webcamp-mother.png);
+}
+.photo-box:nth-child(8){
+	background-image: url(img/talk.jpg);
+}
+.photo-box:nth-child(9){
+	background-image: url(img/webcamp.png);
+}
+.feature{
+    overflow: hidden;
+	padding: 90px 0;
+	width: 980px;
+	text-align: center;
+	margin: 0 auto;
+}
+.feature-text{
+	padding-top: 30px;
+	padding-left: 5%;
+	padding-right: 5%;
+	size: 16px;
+}
+.fbox{
+	width: 320px;
+	height: auto;
+	float: left;
+	padding: 0 10px 10px 0;
+}
+.f-title{
+	size: 20px;
+}
+.ftext-text{
+	text-align: left;
+}
+.profile{
+	padding: 90px 0;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background-color: #ECEFF1;
+}
+.profile-box{
+	width: 1024px;
+	margin: 0 auto;
 	text-align: center;
 }
+.profile-text{
+	text-align: left;
+}
+.bunkatsu-box{
+	width: 512px;
+	float: left;
+	text-align: center;
+}
+.face{
+	border-radius: 125px;
+	height: 250px;
+	width: 250px;
+}
+.t-title{
+	text-align: left;
+	size: 20px;
+}
+.contact{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 90px 0;
+}
+.contact-box{
+	width: 800px;
+	margin: 0 auto;
+}
+.contact-headline{
+	text-align: center;
+}
+.contact-text{
+	padding: 30px 0;
+	text-align: center;
+}
+.contact-bunkatsu{
+	width: 300px;
+	margin: 0  50px 0 50px;
+	height: auto;
+	float: left;
+	text-align: left;
+}
+.social-float{
+	float: left;
+}
+
 footer{
 	width: 100%;
 	height: 60px;
@@ -89,4 +212,127 @@ footer{
 	padding: 15px 0;
 	text-align: center;
 	background-color: #EC715F;
+}
+.social-float i{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media screen and (max-width:748px) {
+*{
+	margin: 0 auto;
+}
+header{
+	width: 100%;
+	height: 50px;
+}
+.nav-list{
+	width: 100%;
+}
+.logo-image{
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+	background-image: url(img/logo.png);
+	background-size: cover;
+	float: left;
+}
+.logo-image2{
+	margin-top:3px;
+	margin-right: 8px;
+	width: 44px;
+	height: 44px;
+	display: inline-block;
+	background-image: url(img/btn03-03.png);
+	background-size: cover;
+	float: right;
+}
+.nav-list-item{
+	display: none;
+	}
+.main-visual{
+	width: 100%;
+	background-image: url(img/code.png);
+}
+.grey{
+	width: 100%;
+}
+.portfolio{
+	width: 100%;
+}
+.portfolio-text{
+	width: 90%;
+}
+.photo-box{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	float: none;
+	background-size: cover;
+	background-position: center;
+}
+.feature{
+	width: 100%;
+}
+.feature-text{
+	width: 90%;
+}
+.fbox{
+	padding:5% 5% 5% 5%;
+	margin: 0 auto;
+	width: 90%;
+	float: none;
+}
+.profile{
+	width: 100%;
+}
+.profile-box{
+	width: 100%;
+	margin: 0 auto;
+}
+.profile-text{
+	width: 90%;
+	text-align: center;
+}
+.bunkatsu-box{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	background-position: center;
+	margin: 0 auto;
+}
+.photo-box:nth-child(4){
+	display: none;
+	background-image: url(img/sketch.jpg);
+}
+.photo-box:nth-child(6){
+	display: none;
+	background-image: url(img/sketch.jpg);
+}
+
+.photo-box:nth-child(8){
+	display: none;
+	background-image: url(img/sketch.jpg);
+}
+.contact{
+	width: 90%;
+	text-align: center;
+}
+.contact-box{
+	width: 90%;
+	margin: auto;
+}
+.contact-bunkatsu{
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	float: none;
+}
+.social-float{
+	float: none;
+}
+footer{
+	width: 100%;
+}
 }
