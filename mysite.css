@@ -75,7 +75,7 @@ header{
 .portfolio{
 	overflow: hidden;
 	padding: 90px 0;
-	width: 940px;
+	width: 920px;
 	text-align: center;
 	margin: 0 auto;
 }
@@ -84,6 +84,19 @@ header{
 	size: 32px;
 	margin: 0 auto;
 }
+
+.midashi2{
+	font-size: 20px;
+	padding-bottom: 5px;
+	text-align: left;
+}
+.midashi3{
+	padding-top: 20px;
+	font-size: 20px;
+	padding-bottom: 5px;
+	text-align: left;
+}
+
 .border{
 	width: 70px;
 	text-align: center;
@@ -92,8 +105,9 @@ header{
 	padding-bottom: 8px;
 }
 .portfolio-text{
+	margin: 0 auto;
 	width: 90%;
-	padding: 60px 0;
+	padding: 30px 0;
 	size: 16px;
 }
 .photo-box{
@@ -102,25 +116,29 @@ header{
 	height: 250px;
 	background-size: cover;
 	background-position: center;
-	margin: 0 10px 10px 0;
 }
 .photo-box:nth-child(4){
 	background-image: url(img/sketch.jpg);
+	margin: 0 10px 0 0;
 }
 .photo-box:nth-child(5){
 	background-image: url(img/websuku.png);
 }
 .photo-box:nth-child(6){
 	background-image: url(img/write.jpg);
+	margin: 0 0 0 10px;
 }
 .photo-box:nth-child(7){
 	background-image: url(img/webcamp-mother.png);
+	margin: 10px 10px 0 0;
 }
 .photo-box:nth-child(8){
 	background-image: url(img/talk.jpg);
+	margin: 10px 10px 0 0;
 }
 .photo-box:nth-child(9){
 	background-image: url(img/webcamp.png);
+	margin: 10px 0 0 0; 
 }
 .feature{
     overflow: hidden;
@@ -130,16 +148,28 @@ header{
 	margin: 0 auto;
 }
 .feature-text{
-	padding-top: 30px;
+	padding: 30px 0;
 	padding-left: 5%;
 	padding-right: 5%;
 	size: 16px;
 }
-.fbox{
+.fbox1{
 	width: 320px;
 	height: auto;
 	float: left;
-	padding: 0 10px 10px 0;
+	padding: 0 10px 0 0;
+}
+.fbox2{
+	width: 320px;
+	height: auto;
+	float: left;
+	padding: 0 auto;
+}
+.fbox3{
+	width: 320px;
+	height: auto;
+	float: left;
+	padding: 0 0 0 10px;
 }
 .f-title{
 	size: 20px;
@@ -161,6 +191,7 @@ header{
 }
 .profile-text{
 	text-align: left;
+	padding-bottom: 20px;
 }
 .bunkatsu-box{
 	width: 512px;
@@ -202,6 +233,9 @@ header{
 }
 .social-float{
 	float: left;
+}
+.kasen{
+	 border-bottom: 1px solid;
 }
 
 footer{
@@ -277,8 +311,21 @@ header{
 .feature-text{
 	width: 90%;
 }
-.fbox{
-	padding:5% 5% 5% 5%;
+.fbox1{
+	padding: none;
+	margin: 0 auto;
+	width: 90%;
+	float: none;
+}
+.fbox2{
+	padding: none;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 90%;
+	float: none;
+}
+.fbox3{
+	padding: none;
 	margin: 0 auto;
 	width: 90%;
 	float: none;
@@ -301,18 +348,33 @@ header{
 	background-position: center;
 	margin: 0 auto;
 }
+
 .photo-box:nth-child(4){
 	display: none;
 	background-image: url(img/sketch.jpg);
 }
+
+.photo-box:nth-child(5){
+    margin: 0 auto;
+}
+
 .photo-box:nth-child(6){
 	display: none;
 	background-image: url(img/sketch.jpg);
 }
 
+.photo-box:nth-child(7){
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 .photo-box:nth-child(8){
 	display: none;
 	background-image: url(img/sketch.jpg);
+}
+.photo-box:nth-child(9){
+    margin: 0 auto;
 }
 .contact{
 	width: 90%;
@@ -331,6 +393,12 @@ header{
 }
 .social-float{
 	float: none;
+}
+.midashi2{
+	text-align: center;
+}
+.social{
+	padding-top: 30px;
 }
 footer{
 	width: 100%;
